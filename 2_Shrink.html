@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shrink</title>
+  <style>
+    /* flex-shrink: Bu xüsusiyyət, flex elementinin nə qədər sürətlə küçülməsi lazım olduğunu təyin edir. İşləyən flex elementlərinin flex-shrink qiymətləri ənənəvi olaraq müqayisə olunur və əsas flex konteyneri ölçüsündən azalarkən, bu qiymətlər nisbətində böyünür. */
+
+    .flex-container {
+      display: flex;
+      width: 100rem;
+      background-color: #ccc;
+      margin: auto;
+      /* flex-flow: wrap; */
+     /* shrink 0 olsa warapa ehtiyac var */
+    }
+
+
+    .flex-item {
+      background-color: lightsteelblue;
+      height: 100px;
+      width: 40rem;
+      margin: 10px;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 100px;
+      color: blue;
+      flex-shrink: 1;     
+      /* flex-shirnk: 0 olsa Bu flex elementi küçülməyəcək */
+      /* shrink 0 olsa warapa ehtiyac var */
+      /* Flex-shirinki 0 versez bokslar qutudan dasacaq */
+      /* Birinci Flex-shrink 0 yoxla 
+               Sonra nth childlari elave ele */
+
+      /* flex-shrink: 0; */
+      /* Defaultu 1-dir */
+    }
+
+    /* .flex-item:nth-child(1) {
+      flex-shrink: 2;
+      background-color: blue;
+      color: #fff;
+    } */
+
+    .flex-item:nth-child(2) {
+      flex-shrink: 8;
+      background-color: red;
+      color: #fff;
+    }
+
+    /* .flex-item:nth-child(3) {
+      flex-shrink: 12;
+      background-color: green;
+      color: #fff;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+  </div>
+</body>
+
+
+<!-- https://www.quackit.com/css/flexbox/examples/ -->
+</html>

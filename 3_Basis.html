@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basis</title>
+    <style>
+        /* BURDA BOXLARA FAIZ VERMEYE EHTIHAC YOXDU */
+        /* Responsivde yaxsidir her mediaya gore deyismeye ehtiyac qalmir */
+        /* KODLAR BU SEKILDE OLANDA EKRANI BALACALASDIR VE YOXLA IKI DIVDEN BIRI ASAGI DUSECEY */
+        /* EKRANI IKI HISSEYE BOLENDE ESASEN ISTIFADE OLUNUR */
+
+        /* flex-basis: Bu xüsusiyyət, flex elementinin əsas ölçüsünü təyin edir. İstəyə bağlı vahid (px, em, %, və s.) və ya auto (elementin təbii ölçüsü) ola bilər. */
+
+    
+
+        /* flex: 1; ifadəsi üç əsas flex xüsusiyyətini (flex-grow, flex-shrink, və flex-basis) qısa formada təyin edir. Bu ifadənin ən çox istifadə olunan formadır və elementi flex konteynerinin boşluğunu bütün qalan sahəyə (boşluğa) yaymağa nail edir.
+
+Bu ifadə təyin edildikdə, flex elementi digər elementlərlə bölüşdüyü boşluğu bütün sahəyə ədalətli şəkildə paylaşmağa çalışır. İşləyən elementlərin flex-grow, flex-shrink, və flex-basis qiymətləri 1, 1, və 0% təşkil edilir.
+
+Əgər bütün flex elementləri üçün eyni davranışı istəyirsinizsə və hər hansı bir xüsusi ölçü təyin etmək istəmirsinizsə, flex: 1; ifadəsi sadə və effektiv bir yoldur. */
+    /*    .item {
+                    flex: 1;
+
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                    flex-basis: 0%;
+
+        }*/
+
+        .flex-container {
+            display: flex;
+            background-color: #ccc;
+            height: auto;
+            margin: auto;
+            flex-flow: wrap;
+            /* nowrap  defaultdu
+         */
+        }
+        /* flex-flow CSS xüsusiyyəti iki əsas flex xüsusiyyətini - flex-direction və flex-wrap - təyin etmək üçün istifadə olunur. Bu xüsusiyyət, bu iki xüsusiyyəti təyin etməyin qısa formasıdır və əsasən flex-direction və flex-wrap qiymətləri ilə təyin edilir. 
+        
+        flex-flow: <flex-direction> || <flex-wrap>;
+        <flex-direction>: Flex konteynerin əsas oxunun istiqamətini təyin edir (məsələn, row, column, row-reverse, column-reverse).
+
+        <flex-wrap>: Flex elementlərinin yeni sıralara keçidinə icazə verib verilməyəcəyini təyin edir (məsələn, nowrap, wrap, wrap-reverse).
+        
+            .container {
+            flex-flow: row wrap;
+
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        Bu nümunələrdə flex-flow xüsusiyyəti digər kombinasiyalar üçün istifadə olunur. Bu tətbiq etmə üsulu, flex-direction və flex-wrap-i tək bir xüsusiyyətdə birləşdirərək kodu daha qısa və oxunaqlı edir.
+
+        
+        */
+
+        .flex-item {
+            height: 100px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 100px;
+            color: wheat;
+        }
+
+
+        .flex-item:nth-child(1) {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 40rem;
+            /* flex: 1; */
+            background-color: blue;
+
+        }
+
+        .flex-item:nth-child(2) {
+            flex: 1 1 40rem;
+            /* flex: 2; */
+            background-color: red;
+        }
+
+
+        /* flex: 1 0 100px; */
+        /* 
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 100px;
+        */
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow</title>
+    <style>
+        
+/* flex-grow, flex-shrink, və flex-basis CSS xüsusiyyətləri flex elementlərinin ölçüsünü və davranışını nizamlayan əsas mənbələrdir. */
+        /* flex-grow: Bu xüsusiyyət, flex elementinin nə qədər genişləməli olduğunu təyin edir. İşləyən flex elementlərinin flex-grow qiymətləri ənənəvi olaraq müqayisə olunur və əsas flex konteyneri ölçüsündə çoxalırken, bu qiymətlər nisbətində bölünür. */
+
+        .flex-container {
+            display: flex;
+        }
+
+
+        .flex-item {
+            background-color: blue;
+            color: #fff;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            line-height: 100px;
+            border-radius: 10px;
+            text-align: center;
+            flex-grow: 1;  /* Digər flex elementlərindən bir dəfə çox genişləyəcək */
+        }
+
+        .flex-item:nth-child(2) {
+            flex-grow: 2;  /* Digər flex elementlərindən iki dəfə çox genişləyəcək */
+            background-color: red;
+            color: #fff;
+        }
+
+        .flex-item:nth-child(3) {
+            flex-grow: 3;   /* Digər flex elementlərindən uc dəfə çox genişləyəcək */
+            background-color: green;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+</body>
+
+</html>
