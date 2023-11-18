@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox</title>
+	<style>
+	
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		.container {	
+			display: flex;
+            /* MARGIN auto ortaya sifirliyir */
+			/* align-items: center;
+			justify-content: center; */
+			height: 100vh;
+			background-color: #f2f2f2;
+		}
+		
+		.item {		
+            /* MARGIN auto ortaya sifirliyir */
+			margin: auto;
+			/* 2 elemt tam ortaya getirmir yalniz birini getirir */
+			background-color: lightpink;
+			border-radius: 15px;
+			padding: 30px;			
+			color: #fff;
+			font-size: 25px;
+		}
+		  
+		/* sagdan ve yuxardan 0 liyir */
+		 /* .i1 {
+			margin-right: auto;
+			margin-top: auto;
+		}
+		
+		.i2 {
+			margin-left: auto;
+			margin-bottom: auto;
+		}  */
+	
+	</style>
+</head>
+<body>
+	
+	<div class="container">		
+		<div class="item i1">item 1</div>	
+		<div class="item i2">item 2</div>	
+	</div>
+	
+	
+</body>
+</html>

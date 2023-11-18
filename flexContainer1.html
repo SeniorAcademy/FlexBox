@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			background-color: linen;
+		}
+
+	
+		.container {
+			padding: 10px;
+			display: flex;  
+			/* inline blockdan ferqi elementin ozune vermeye ehtiyac yoxdur yeni parente ver!*/
+             
+			 /* row defaultdu */
+			 /* flex-direction: row; */
+			 /* flex-direction: row-reverse; */
+
+
+
+			  /* flex-direction: column;  */
+			/* flex-direction: column-reverse; */
+
+
+
+			
+/* flex-wrap CSS xüsusiyyəti flex konteynerindəki elementlərin bir sıradan başqa sıraya keçməsini nizamlayır. Əgər konteynerin ölçüsü elementlərin ölçüsündən böyükdirsə və ya elementlər çox sayda olduğundan sığmırsa, flex-wrap təyin olunan qiymətə əsasən davranacaq. */
+             /*nowrap defaultdu */
+			 /*flex-wrap: nowrap; */
+			/* flex-wrap: wrap;  wrap: Elementlər yeni sıralara keçə bilər. Eğer bir sıra ölçüsü konteynerin ölçüsündən böyükdirsə, element yeni sıradan başlayacaq.*/
+			/* flex-wrap: wrap-reverse; wrap-reverse: wrap ilə eyni təsirə sahibdir, ancaq yeni sıralar konteynerin üstündən aşağıya doğru əlavə olunacaq. */
+    
+		}
+
+		.item {
+			/* display: inline-block; */
+			/* float: left; */
+			background-color: lightskyblue;
+			padding: 30px;
+			margin: 30px;
+			color: #fff;
+			font-size: 25px;
+			border-radius: 15px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="item">item 1</div>
+		<div class="item">item 2</div>
+		<div class="item">item 3</div>
+		<div class="item">item 4</div>
+		<div class="item">item 5</div>
+		<div class="item">item 6</div>
+		<div class="item">item 7</div>
+		<div class="item">item 8</div>
+		<div class="item">item 9</div>
+		<div class="item">item 10</div>
+		<div class="item">item 11</div>
+		<div class="item">item 12</div>
+
+	</div>
+
+
+</body>
+
+</html>

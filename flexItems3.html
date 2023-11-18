@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox</title>
+	<style>
+
+/* order CSS xüsusiyyəti flex konteynerində və ya flex elementində sıralanmağa təsir edir. Bu xüsusiyyət, flex elementlərini təyin edilmiş sıraya salmaq üçün istifadə olunur.
+
+Əgər order xüsusiyyətini təyin edirsinizsə, onun qiyməti böyük olan elementlər daha sonra, kiçik olanlar isə daha əvvəl sıralanacaq. Əgər iki və ya daha çox elementin order qiyməti eyni olarsa, onlar təbii sıralanma qaydasına əsaslanacaq (DOM-hiyərarsiya və ya saxlanma sırası). */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.container {
+			display: flex;
+			background-color: lightblue;
+			align-items: center;
+			height: 400px;
+		}
+
+		.item {
+			background-color: lightcoral;
+			border-radius: 15px;
+			padding: 30px;
+			margin: 30px;
+			color: #fff;
+			font-size: 25px;
+		}
+
+		.i1 {
+			order: 4;
+		}
+
+	   .i2 {
+			order: 3;
+		} 
+
+		.i3 {
+			align-self: flex-start;
+
+		}
+
+		.i4 {
+			/* order: -2; */
+			align-self: flex-end;
+		} 
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="item i1">item 1</div>
+		<div class="item i2">item 2</div>
+		<div class="item i3">item 3</div>
+		<div class="item i4">item 4</div>
+
+	</div>
+
+
+
+
+</body>
+
+</html>

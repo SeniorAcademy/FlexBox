@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox</title>
+	<style>
+	
+		* {
+			margin: 0;
+			padding: 0;
+			background-color: lavender;
+		}
+		
+		.container {
+			padding: 10px;
+			height: 10vh; 
+			/* align-items-a catanda height-i 100vh ele */
+			display: flex;
+			/* flex-direction: column; */
+
+			 justify-content: center; 
+			 /* justify-content: flex-start;  */
+
+			 /* BETWEEN  aradan bosluq verir amma sag soldan yox */
+			 /* justify-content: space-between; */
+
+			 /* AROUND sag soldanda bosluq verir AMMA ORTADAN BOSLUQNAN EYNI VERMIR*/
+			 /* justify-content: space-around; */
+
+			 /* EVENLY her yerden eyni bosluq verir */
+		     /* justify-content: space-evenly; */
+			  
+
+
+			 /* strech default deyerdi */
+			 /* align-items: stretch; */
+			 /* align-items: center;  */
+			 /* align-items: flex-start; */
+			 /* align-items: flex-end;  */
+			 
+
+			 /* I4 CLASSIN AKTIV ELE
+			 YAZIYA GORE ORTALIYIR DIVLERI */
+			 /* align-self: baseline; */
+			
+			
+
+
+			/* flex-directionun Row yerine Column eliyende Align-itemsnan Justifyin funksiyalari deyisir */
+		}
+		
+		.item {
+			background-color: lightseagreen;
+			padding: 30px;
+			margin: 30px;
+			color: #fff;
+			font-size: 25px;
+			border-radius: 25px;
+			line-height: 5px;
+		}
+		
+		
+		/* .i4 {
+			font-size:75px;
+		}  */
+	
+	</style>
+</head>
+<body>
+	
+	<div class="container">
+		
+		<div class="item">item 1</div>
+		<div class="item">item 2</div>
+		<div class="item">item 3</div>
+		<div class="item i4">item 4</div>		
+		
+	</div>
+	
+	
+</body>
+</html>
